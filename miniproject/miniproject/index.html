@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pickmart shoping your happiness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         a{
+            text-decoration:none;
+            color: white;
+         }
+        
+        .header{
+           min-height: 50px;
+            margin-top: 20px;
+            background-color: rgb(52, 48, 73);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            position: sticky;
+            top:0;
+            border-bottom: 10px solid lightgray;
+            width: 100%;
+
+        }
+        .title{
+            order:2;
+            flex:2;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+        }
+        
+        .title h1{
+            font-size: 45px;
+            color: white;
+            
+            text-shadow:3px 2px  blue;
+            width:200px;
+
+            
+            
+        }
+        .search{
+            width:100px;
+            
+            
+        }
+        
+        .icon{
+            width: 40px;
+            color:white;
+            border-radius: 20%;
+        }
+      .logo{
+        height:100px;
+        width:80px;
+        
+    
+      }
+            
+            
+            
+        
+        .headerbottom{
+            order:3;
+            align-self: flex-end;
+           flex: 1;
+           display: flex;
+           justify-content: space-evenly;
+
+        }
+        .main{
+         min-height:100vp;
+            background-color: wheat;
+            display: flex;
+            
+            flex-flow: column wrap;
+            
+        }
+        .main .container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+       .box{
+            height:200px;
+           width:150px;
+           background-color: rgb(250, 250, 250);
+             border:  solid violet;
+            border-radius: 20px;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+
+        }
+        .box div {
+           
+            
+        
+        
+        margin-top: 10px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-direction: column;
+            text-align: center;
+            
+        
+        
+            
+        }
+        .box div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        .box div p{
+            margin:0;
+        }
+        .buy button{
+            margin: 20px;
+            width: 80px;
+            height: 40px;
+            background-color:beige;
+            font-size: small;
+            border: 2px solid black;
+            border-radius: 20px;
+            
+
+         
+         
+         
+        }
+        .buy button:hover{
+            transform:translatey(4px);
+            background-color: rgb(230, 210, 97);
+        }
+        .buy button:active{
+            background-color: yellow;
+            
+        }
+        .b{
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        
+        .intro{
+            margin-top: 2px;
+            height:500px;
+
+            color :white;
+        }
+        .footer{
+        background-color: rgb(52, 48, 73);
+        color:white;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+       }
+       .footer h2{
+        color: black;
+       }
+       .footer a {
+         color: rgb(194, 202, 192);
+        
+         
+
+       }
+       .footer li{
+        margin-top: 10px;
+        font-size: 25px;
+        
+       }
+     
+    </style>
+</head>
+<body>
+    <!---header for this page-->
+    
+    <div class="header">
+        <div class=" title">
+        <h1>picMart</h1>
+        <div>
+            <input type="text" class="search"id="search"placeholder="search">
+            <button type="submit" class="searchicon" id="search icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      
+        </div>
+        <div class=" headermid">
+            <img class="logo" src="images/logo/logo.png"alt="logo">
+           
+        </div>
+        <div class="headerbottom">
+           
+            <a href="signin.html"target="_blank">signin</a>
+          <!---- <a href="order.html"target="_blank">order</a>-->
+           <a class="icon" href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+           
+
+        </div>
+    </div>
+    <!--code begining foe content -->
+    <div class="main">
+        <!--catogry vegitable-->
+        <div class="container veg" id="veg">
+            
+         <div class="box box1">
+            <div class="products">
+             <img src="images/vegitables/beans.jpg">
+          
+            </div>
+           
+           
+            <div class="buy">
+                <p class="price">$2</p>
+                <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+                
+            </div>
+           
+        </div>
+        
+         <div class="box box2"><div class="products">
+            <img src="images/vegitables/beetroot.jpg">
+         
+           </div>
+          
+          
+           <div class="buy">
+               <p class="price">$2</p>
+               <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+               
+           </div></div>
+        <div class="box box3"><div class="products">
+            <img src="images/vegitables/brinjal.jpg">
+         
+           </div>
+          
+          
+           <div class="buy">
+               <p class="price">$2</p>
+               <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+               
+           </div></div>
+        <div class="box box3"><div class="products">
+            <img src="images/vegitables/carlic.jpg">
+         
+           </div>
+          
+          
+           <div class="buy">
+               <p class="price">$2</p>
+               <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+               
+           </div></div>
+        <div class="box box4"><div class="products">
+            <img src="images/vegitables/carrot.jpg">
+         
+           </div>
+          
+          
+           <div class="buy">
+               <p class="price">$2</p>
+               <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+               
+           </div></div> 
+        <div class="box box5"><div class="products">
+            <img src="images/vegitables/onion.jpg">
+         
+           </div>
+          
+          
+           <div class="buy">
+               <p class="price">$2</p>
+               <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+               
+           </div>
+        </div>
+        <div class="box box6">
+            <div class="products">
+            <img src="images/vegitables/tomatoi.jpg">
+         
+           </div>
+          
+          
+           <div class="buy">
+               <p class="price">$2</p>
+               <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+               
+           </div>
+        </div>
+        
+           
+          
+          
+           </div>
+           <!--catogry vegitable close-->
+
+        <!-- start catagry fruits-->
+        <div class="container fruit" id="fruits">
+            
+            <div class="box box1">
+               <div class="products">
+                <img src="images/fruits/banana.jpg">
+             
+               </div>
+              
+              
+               <div class="buy">
+                   <p class="price">$2</p>
+                   <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+                   
+               </div>
+              
+           </div>
+           
+            <div class="box box2"><div class="products">
+               <img src="images/fruits/orange.jpg">
+            
+              </div>
+             
+             
+              <div class="buy">
+                  <p class="price">$2</p>
+                  <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+                  
+              </div></div>
+           <div class="box box3"><div class="products">
+               <img src="images/fruits/pineapple.jpg">
+            
+              </div>
+             
+             
+              <div class="buy">
+                  <p class="price">$2</p>
+                  <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+                  
+              </div></div>
+           <div class="box box3"><div class="products">
+               <img src="images/fruits/apple.jpg">
+            
+              </div>
+             
+             
+              <div class="buy">
+                  <p class="price">$2</p>
+                  <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+                  
+              </div></div>
+           <div class="box box4"><div class="products">
+               <img src="images/fruits/watermelon.jpg">
+            
+              </div>
+             
+             
+              <div class="buy">
+                  <p class="price">$2</p>
+                  <button type="submit" name="buy box1"><strong>Buy Now</strong></button>
+                  
+              </div></div> 
+    </div>
+    <!--fruits div close-->
+    <!--below tap for footer-->
+    <div class="footer">
+        <div>
+            <h2>All Groceries</h2>
+            <ul>
+                <li><a href="#veg">vegitable</a></li>
+                <li><a href="#fruits">fruits</a></li>
+                <li>cake & sweets</li>
+                <li>kitchen items</li>
+            </ul>
+        </div>
+        <div>
+            <h2>contacts</h2>
+            <address>
+                no:36,<br>
+                T-stay,<br>
+                karambakkam,<br>
+                chennai-600024.
+            </address>
+            
+            <p class="tel">whatsapp:<a href="tel+919344873938">+91 9344873938</a></p>
+            <p>8.00 am to 11.00pm,365 days</p>
+            <p>if any enquiry mail to us <a href="mailto:rajagurumech3@gmail.com">rajagurumech3@gmail.com</a></p>
+        </div>
+        </div>
+    
+</body>
+</html>

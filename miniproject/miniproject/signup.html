@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+            a{
+            text-decoration:none;
+            color: white;
+         }
+        .header{
+           min-height: 50px;
+            margin-top: 20px;
+            background-color: rgb(52, 48, 73);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            border-bottom: 10px solid lightgray;
+            top:0;
+            
+            width: 100%;
+
+        }
+        .title{
+            order:2;
+            flex:2;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        
+        .title h1{
+            font-size: 45px;
+            color: white;
+            
+            text-shadow:3px 2px  blue;
+            width:200px;
+
+            
+            
+        }
+        .search{
+            width:100px;
+            
+        }
+        .icon{
+            width: 40px;
+            color:white;
+            border-radius: 20%;
+        }
+      .logo{
+        height:100px;
+        width:80px;
+        
+    
+      }
+      .headerbottom{
+            order:3;
+            align-self: flex-end;
+           flex: 1;
+           display: flex;
+           justify-content: space-evenly;
+
+        }
+        .main{
+            
+            min-height:100vp;
+            
+            display: flex;
+            justify-content: center;
+        
+        }
+        .container{
+            width: 50%;
+            height: 400px;
+            margin-top: 20px;
+            
+            
+
+            display: flex;
+            
+            
+            text-align: center;
+            justify-content: space-between;
+            flex-direction: column ;
+            
+            border: 20px solid royalblue;
+            border-radius: 20px;
+            background-color: rgb(28, 32, 32);
+            color: white;
+        }
+        .container1{
+            
+            flex:1;
+            
+           
+            border-bottom: 2px solid black ;
+            
+
+        }
+        .container2{
+            flex: 1;
+        }
+        .container button{
+            width: 80px;
+            align-self: center;
+            margin-bottom: 20px;
+            background-color: orangered;
+        }
+        .container1 h2{
+           background-color: yellow;
+           margin: 0;
+           color: black;
+        }
+        .container1 section{
+            margin-top: 15px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class=" title">
+        <h1>picMart</h1>
+        <div>
+            <input type="text" class="search"id="search"placeholder="search">
+            <button type="submit" class="search icon" id="searchicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      
+        </div>
+        <div class=" headermid">
+            <img class="logo" src="images/logo/logo.png"alt="logo">
+           
+        </div>
+        <div class="headerbottom">
+           
+            <a href="index.html"target="_blank">Home</a>
+          <!-- <a href="order.html"target="_blank">order</a>-->
+           <a class="icon" href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+           
+
+           
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="container" >
+            <div class="container1">
+                <h2>Register</h2>
+                <form action="signed.html" method="get">
+                <section>
+                    <label for="name">Name</label>
+                    <input type="string"name="name"id="name"placeholder="Enter your name" required>
+                </section>
+                <section>
+                    <label>E-mail</label>
+                    <input type="email"name="mail"id="mail">
+                </section>
+                
+               
+                <section>
+                    <label for="DOB">Date of birth</label>
+                    <input type="date"name="DOB"id="DOB"placeholder="10/04/1998" required>
+                    <label for="age">Age</label>
+                    <input type="number"name="age"id="age" min="18"required>
+                </section>
+                <section>
+                    <label for="GEN">Gender</label>
+                    <input type="radio"name="GEN"id="GEN" value="male">
+                    <label for="male" >Male</label>
+                    <input type="radio"name="GEN"id="GEN" value="female">
+                    <label for="female">Female</label>
+                </section>
+                <section>
+                    <label for="mobile">Mobile No</label>
+                    <input type="tel"name="mobile"id="mobile"placeholder="+91--------" required >
+                </section>
+                <section>
+                    <label for="pass">Password</label>
+                    <input type="password"name="pass"id="pass" required>
+                    
+                </section>
+                <section>
+                    <label for="re-pass">Re-password</label>
+                    <input type="password"name="re-pass"id="re-pass"required>
+    
+                </section>
+               <section>
+                <button type="submit" name="submit"id=submit>Register</button>
+               </section>
+            </form>
+                
+                
+</body>
+</html>
